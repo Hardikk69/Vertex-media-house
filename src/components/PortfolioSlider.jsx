@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { initSlider } from './Slider';
-import '../styles/slider.css';
+import '../styles/Slider.css';
 
 export const PortfolioSlider = ({ title = "Our Work", subtitle = "Our Portfolio", slides }) => {
     const sliderRef = useRef(null);
