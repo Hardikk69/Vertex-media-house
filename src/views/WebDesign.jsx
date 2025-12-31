@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import { PortfolioSlider } from "../components/PortfolioSlider";
 import { Pricing } from "../components/Pricing";
-import "../styles/Style.css";
+import "../styles/style.css";
 import { initInteractions } from "../script/script.js";
 import ScrollStack, { ScrollStackItem } from '../components/ScrollStack'
 

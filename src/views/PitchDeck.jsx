@@ -2,7 +2,7 @@ import Navbar from '../components/Navbar';
 import { Footer } from '../components/Footer';
 import { PortfolioSlider } from '../components/PortfolioSlider';
 import { Pricing } from '../components/Pricing';
-import '../styles/Style.css';
+import '../styles/style.css';
 
 function PitchDeck() {
     const reviewSlides = [

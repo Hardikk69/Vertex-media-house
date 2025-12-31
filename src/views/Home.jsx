@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import Navbar from '../components/Navbar'
 import FloatingLines from '../components/FloatingLines';
-import '../styles/Style.css'
+import '../styles/style.css'
 import { Footer } from '../components/Footer'
 import { initInteractions } from "../script/script.js";
 
