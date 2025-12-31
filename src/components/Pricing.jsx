@@ -1,4 +1,4 @@
-import '../styles/pricing.css';
+import '../styles/Pricing.css';
 
 export const Pricing = () => {
     return (
