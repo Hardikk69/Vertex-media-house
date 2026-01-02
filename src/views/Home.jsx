@@ -1,7 +1,14 @@
 import { useEffect } from 'react';
 import Navbar from '../components/Navbar'
 import FloatingLines from '../components/FloatingLines';
-import '../styles/style.css'
+import '../styles/Global.css'
+import '../styles/Hero.css'
+import '../styles/Stats.css'
+import '../styles/Services.css'
+import '../styles/Process.css'
+import '../styles/Work.css'
+import '../styles/Reviews.css'
+import '../styles/FAQ.css'
 import { Footer } from '../components/Footer'
 import { initInteractions } from "../script/script.js";
 

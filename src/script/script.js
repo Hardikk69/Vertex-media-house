@@ -40,7 +40,7 @@ export function initInteractions() {
     }, observerOptions);
 
     document
-        .querySelectorAll('.stat-card, .service-tab, .step, .work-item, .review-card, h2, .hero-text')
+        .querySelectorAll('.stat-card, .service-tab, .step, .work-item, .review-card, h2:not(.scroll-stack h2), .hero-text')
         .forEach(el => {
             el.classList.add('fade-in-section');
             observer.observe(el);

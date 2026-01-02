@@ -1,8 +1,16 @@
+import StarBorder from '../components/StarBorder';
 import Navbar from '../components/Navbar';
 import { Footer } from '../components/Footer';
 import { PortfolioSlider } from '../components/PortfolioSlider';
 import { Pricing } from '../components/Pricing';
-import '../styles/style.css';
+import '../styles/Global.css';
+import '../styles/Hero.css';
+import '../styles/Stats.css';
+import '../styles/Services.css';
+import '../styles/Process.css';
+import '../styles/Work.css';
+import '../styles/Reviews.css';
+import '../styles/FAQ.css';
 
 function PitchDeck() {
     const reviewSlides = [
@@ -82,34 +90,45 @@ function PitchDeck() {
                     <h2>Our Reviews</h2>
                     <h1>Trusted By Our Clients</h1>
                     <div className="reviews-grid">
-                        <div className="review-card">
+
+                        <StarBorder color="cyan" speed="6s" thickness={1}>
                             <div className="stars">★★★★★</div>
-                            <p>"I had a <strong>great experience</strong> working with Vertex. He was <strong>professional,
-                                responsive, and very patient</strong> throughout the process, even as the scope evolved. He
-                                took my feedback seriously... What stood out most was his willingness to collaborate."</p>
-                        </div>
-                        <div className="review-card">
+                            <p>
+                                "I had a <strong>great experience</strong> working with Vertex. He was
+                                <strong> professional, responsive, and very patient</strong> throughout the process.
+                                What stood out most was his willingness to collaborate."
+                            </p>
+                        </StarBorder>
+
+                        <StarBorder color="cyan" speed="6s" thickness={1}>
                             <div className="stars">★★★★★</div>
-                            <p>"[Vertex] was super easy to work with and delivered <strong>exactly what I needed</strong>—a
-                                clean, professional pitch deck that matched my vision and branding. <strong>Communication was
-                                    smooth</strong>... I highly recommend if you're looking for someone who can bring clarity
-                                and polish to your ideas."</p>
-                        </div>
-                        <div className="review-card">
+                            <p>
+                                "[Vertex] delivered <strong>exactly what I needed</strong> — a clean, professional
+                                pitch deck. <strong>Communication was smooth</strong> and the execution was sharp.
+                                Highly recommended."
+                            </p>
+                        </StarBorder>
+
+                        <StarBorder color="cyan" speed="6s" thickness={1}>
                             <div className="stars">★★★★★</div>
-                            <p>"[Vertex] <strong>immediately grasped what we are trying to achieve as a company</strong> and
-                                delivered the slide decks for both end users and investors. Very professional and responsive.
-                                Looking forward to collaborate on other projects."</p>
-                        </div>
-                        <div className="review-card mini-review">
-                            <p><strong>Very professional</strong>, love to work with him!</p>
-                        </div>
-                        <div className="review-card mini-review">
-                            <p>A wonderfully <strong>quick and accurate delivery</strong>. Will beyond expectations.</p>
-                        </div>
-                        <div className="review-card mini-review">
-                            <p>A wonderfully <strong>quick and accurate delivery</strong>. Will beyond expectations.</p>
-                        </div>
+                            <p>
+                                "[Vertex] <strong>immediately understood our vision</strong> and delivered decks
+                                for both investors and end users. Very professional and responsive."
+                            </p>
+                        </StarBorder>
+
+                        <StarBorder color="cyan" speed="5s" thickness={1}>
+                            <p>
+                                <strong>Very professional</strong>, love working with him!
+                            </p>
+                        </StarBorder>
+
+                        <StarBorder color="cyan" speed="5s" thickness={1}>
+                            <p>
+                                A <strong>quick and accurate delivery</strong>. Went beyond expectations.
+                            </p>
+                        </StarBorder>
+
                     </div>
                 </div>
             </section>

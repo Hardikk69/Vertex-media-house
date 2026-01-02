@@ -1,0 +1,83 @@
+/* Navbar */
+.navbar {
+    padding: 20px 0;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    border: none;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+}
+
+.nav-links a {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+/* Menu Icon */
+.menu-btn {
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    padding: 12px 32px;
+    border-radius: 8px;
+    /* Slightly more rounded */
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: none;
+    display: inline-block;
+}
+
+.btn-white {
+    background: #ffffff;
+    color: #000435;
+}
+
+.btn-white:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+
+    .nav-links,
+    .menu-btn {
+        display: none;
+        /* Simplified for mobile for now layout wise */
+    }
+}

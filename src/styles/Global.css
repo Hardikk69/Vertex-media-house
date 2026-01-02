@@ -1,0 +1,62 @@
+:root {
+    --bg-color: #000435;
+    /* Deep Blue from image */
+    --card-bg: #ffffff;
+    --text-primary: #ffffff;
+    --text-secondary: #a0a0a0;
+    --accent-blue: #3b82f6;
+    --border-color: rgba(255, 255, 255, 0.1);
+    --font-heading: 'Inter', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --grid-line: rgba(255, 255, 255, 0.05);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-body);
+}
+
+body {
+    background-color: #000000;
+    color: var(--text-primary);
+    overflow-x: hidden;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    margin: 0;
+    padding: 0 32px;
+}
+
+/* Common Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}

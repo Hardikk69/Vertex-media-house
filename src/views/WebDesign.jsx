@@ -3,7 +3,16 @@ import Navbar from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import { PortfolioSlider } from "../components/PortfolioSlider";
 import { Pricing } from "../components/Pricing";
-import "../styles/style.css";
+import '../styles/Global.css';
+import '../styles/Hero.css';
+import '../styles/Stats.css';
+import '../styles/Services.css';
+import '../styles/Process.css';
+import '../styles/Work.css';
+import '../styles/Reviews.css';
+import '../styles/FAQ.css';
+import '../styles/ScrollStack.css';
+import '../styles/WebDesign.css';
 import { initInteractions } from "../script/script.js";
 import ScrollStack, { ScrollStackItem } from '../components/ScrollStack'
 
@@ -17,17 +26,17 @@ function WebDesign() {
         {
             type: "review",
             content:
-                '"I had a <strong>great experience</strong> working with Vertex. He was <strong>professional, responsive, and very patient</strong> throughout the process."',
+                'I had a great experience working with Vertex. He was professional, responsive, and very patient throughout the process.',
         },
         {
             type: "review",
             content:
-                '"[Vertex] delivered <strong>exactly what I needed</strong> — a clean, professional pitch deck. <strong>Communication was smooth</strong>."',
+                '[Vertex] delivered exactly what I needed — a clean, professional pitch deck. Communication was smooth.',
         },
         {
             type: "review",
             content:
-                '"Very professional and responsive. <strong>Immediately understood our vision</strong>. Looking forward to more projects."',
+                'Very professional and responsive. Immediately understood our vision. Looking forward to more projects.',
         },
     ];
 
@@ -110,34 +119,83 @@ function WebDesign() {
                 slides={portfolioSlides}
             />
 
-            {/* <section className="scroll-stack">
-                <ScrollStack
-                    useWindowScroll={true}
-                    baseScale={0.9}
-                    stackPosition="30%">
+            <section className="scroll-stack-section">
+                <div className="container scroll-stack-layout">
 
-                    <ScrollStackItem>
-                        <div className="p-8 bg-[#0d1238] rounded-[40px] border border-white/10">
-                            <h2 className="text-3xl font-bold mb-4">Discovery Phase</h2>
-                            <p>We deeply analyze your brand and goals to create a strategic roadmap for success.</p>
-                        </div>
-                    </ScrollStackItem>
+                    {/* LEFT — Why Us */}
+                    <div className="why-us-column">
+                        <span className="why-us-label">Our Work</span>
+                        <h2>Why Us?</h2>
 
-                    <ScrollStackItem>
-                        <div className="p-8 bg-[#081880] rounded-[40px] border border-white/10">
-                            <h2 className="text-3xl font-bold mb-4">Design Strategy</h2>
-                            <p>Creating visual identities that resonate with your target audience and stand out in the market.</p>
+                        <div className="why-us-boxes">
+                            <div className="why-us-box active">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+                                quaerat, fuga quod repudiandae vero voluptatibus explicabo dolor
+                                fugiat natus soluta quia quos dolorem enim? Ipsa molestias ab
+                                recusandae optio saepe?
+                            </div>
+                            <div className="why-us-box">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio
+                                deserunt possimus laudantium maxime dolorum soluta consequuntur
+                                veniam fugit impedit officia dolores exercitationem consequatur
+                                similique et, facere eveniet aspernatur esse magni!
+                            </div>
+                            <div className="why-us-box active">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+                                quaerat, fuga quod repudiandae vero voluptatibus explicabo dolor
+                                fugiat natus soluta quia quos dolorem enim? Ipsa molestias ab
+                                recusandae optio saepe?
+                            </div>
+                            <div className="why-us-box">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio
+                                deserunt possimus laudantium maxime dolorum soluta consequuntur
+                                veniam fugit impedit officia dolores exercitationem consequatur
+                                similique et, facere eveniet aspernatur esse magni!
+                            </div>
                         </div>
-                    </ScrollStackItem>
+                    </div>
 
-                    <ScrollStackItem>
-                        <div className="p-8 bg-[#1a1a1a] rounded-[40px] border border-white/10">
-                            <h2 className="text-3xl font-bold mb-4">Development & Launch</h2>
-                            <p>Building high-performance assets and launching them to the world with precision.</p>
-                        </div>
-                    </ScrollStackItem>
-                </ScrollStack>
-            </section> */}
+                    {/* RIGHT — Your existing ScrollStack (UNCHANGED) */}
+                    <div className="scroll-stack-wrapper">
+                        <ScrollStack
+                            useWindowScroll={true}
+                            itemDistance={40}
+                            itemStackDistance={20}
+                            baseScale={0.9}
+                            stackPosition="30%">
+
+                            <ScrollStackItem>
+                                <div>
+                                    <h2 className="text-3xl font-bold mb-4">Discovery Phase</h2>
+                                    <p>We deeply analyze your brand and goals to create a strategic roadmap for success.</p>
+                                </div>
+                            </ScrollStackItem>
+
+                            <ScrollStackItem>
+                                <div>
+                                    <h2 className="text-3xl font-bold mb-4">Design Strategy</h2>
+                                    <p>Creating visual identities that resonate with your target audience.</p>
+                                </div>
+                            </ScrollStackItem>
+
+                            <ScrollStackItem>
+                                <div>
+                                    <h2 className="text-3xl font-bold mb-4">Development & Launch</h2>
+                                    <p>Building high-performance assets and launching them with precision.</p>
+                                </div>
+                            </ScrollStackItem>
+
+                            <ScrollStackItem>
+                                <div>
+                                    <h2 className="text-3xl font-bold mb-4">Discovery Phase</h2>
+                                    <p>We deeply analyze your brand and goals to create a strategic roadmap for success.</p>
+                                </div>
+                            </ScrollStackItem>
+                        </ScrollStack>
+                    </div>
+                </div>
+            </section>
+
             {/* Process Section */}
             <section className="process" id="process">
                 <div className="container">

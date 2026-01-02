@@ -1,0 +1,76 @@
+/* WebDesign Page Specific Styles */
+.scroll-stack-section {
+    padding: 80px 0;
+    position: relative;
+}
+
+.scroll-stack-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.why-us-column {
+    position: sticky;
+    top: 100px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.why-us-label {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--accent-blue);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.why-us-column h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    line-height: 1.1;
+}
+
+.why-us-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.why-us-box {
+    padding: 24px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 0.3s ease;
+}
+
+.why-us-box.active,
+.why-us-box:hover {
+    background: #ffffff;
+    color: #000435;
+    border-color: #fff;
+}
+
+.scroll-stack-wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    /* Ensure enough space for scrolling */
+}
+
+@media (max-width: 900px) {
+    .scroll-stack-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .why-us-column {
+        position: static;
+        margin-bottom: 40px;
+    }
+}

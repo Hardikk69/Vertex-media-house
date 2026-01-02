@@ -1,0 +1,10 @@
+/* Stepper Isolated Styles */
+.stepper-container {
+    /* Isolation context */
+    isolation: isolate;
+}
+
+.stepper-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
