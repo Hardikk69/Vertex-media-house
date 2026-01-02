@@ -252,23 +252,27 @@ function Home() {
             {/* <!-- FAQ Section --> */}
             <section className="faq" id="faq">
                 <div className="container">
-                    <div className="faq-list">
-                        <h2>FAQs</h2>
-                        <div className="faq-item">
-                            <div className="faq-question">How many years of experience do you have? <div className="toggle-icon"></div>
-                            </div>
-                            <div className="faq-answer">We have significant experience in delivering high-quality design and tech
-                                solutions.</div>
+                    <div className="faq-layout">
+                        <div className="faq-header-column">
+                            <h2>FAQs</h2>
                         </div>
-                        <div className="faq-item">
-                            <div className="faq-question">Do you treat every project with importance? <div className="toggle-icon"></div>
+                        <div className="faq-items-column">
+                            <div className="faq-item">
+                                <div className="faq-question">How many years of experience do you have? <div className="toggle-icon"></div>
+                                </div>
+                                <div className="faq-answer">We have significant experience in delivering high-quality design and tech
+                                    solutions.</div>
                             </div>
-                            <div className="faq-answer">We treat every project with the utmost importance and dedication.</div>
-                        </div>
-                        <div className="faq-item">
-                            <div className="faq-question">What is your process like? <div className="toggle-icon"></div>
+                            <div className="faq-item">
+                                <div className="faq-question">Do you treat every project with importance? <div className="toggle-icon"></div>
+                                </div>
+                                <div className="faq-answer">We treat every project with the utmost importance and dedication.</div>
                             </div>
-                            <div className="faq-answer">Our process is streamlined for efficiency and quality.</div>
+                            <div className="faq-item">
+                                <div className="faq-question">What is your process like? <div className="toggle-icon"></div>
+                                </div>
+                                <div className="faq-answer">Our process is streamlined for efficiency and quality.</div>
+                            </div>
                         </div>
                     </div>
                 </div>

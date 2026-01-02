@@ -1,10 +1,26 @@
 /* Faq */
-.faq-list {
-    max-width: 600px;
-    margin: 0 auto;
+.faq-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 64px;
+    align-items: start;
+    width: 100%;
+}
+
+.faq-header-column h2 {
+    font-size: 3rem;
+    margin-bottom: 0;
+    position: sticky;
+    top: 100px;
+    /* Sticky title on scroll */
+    line-height: 1.1;
+}
+
+.faq-items-column {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    width: 100%;
 }
 
 .faq-item {
@@ -18,7 +34,6 @@
 
 .faq-question {
     padding: 24px 32px;
-    /* Increased padding for calming feel */
     color: #000;
     font-weight: 600;
     font-size: 1rem;
@@ -35,7 +50,6 @@
     border-radius: 50%;
     position: relative;
     transition: transform 0.4s ease;
-    /* Smooth rotation */
     flex-shrink: 0;
 }
 
@@ -61,7 +75,6 @@
     padding: 0 32px;
     color: #555;
     max-height: 0;
-    /* Hidden by default */
     overflow: hidden;
     opacity: 0;
     transition: max-height 0.5s ease, opacity 0.5s ease, padding 0.5s ease;
@@ -70,6 +83,17 @@
 .faq-item.active .faq-answer {
     padding-bottom: 32px;
     max-height: 200px;
-    /* Approximate max height */
     opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .faq-layout {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .faq-header-column h2 {
+        position: static;
+        margin-bottom: 24px;
+    }
 }

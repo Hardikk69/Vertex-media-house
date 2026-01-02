@@ -235,36 +235,40 @@ function WebDesign() {
             {/* FAQ */}
             <section className="faq" id="faq">
                 <div className="container">
-                    <div className="faq-list">
-                        <h2>FAQs</h2>
-
-                        <div className="faq-item">
-                            <div className="faq-question">
-                                How many years of experience do you have?
-                                <div className="toggle-icon"></div>
-                            </div>
-                            <div className="faq-answer">
-                                We have extensive industry experience.
-                            </div>
+                    <div className="faq-layout">
+                        <div className="faq-header-column">
+                            <h2>FAQs</h2>
                         </div>
 
-                        <div className="faq-item">
-                            <div className="faq-question">
-                                Do you treat every project with importance?
-                                <div className="toggle-icon"></div>
+                        <div className="faq-items-column">
+                            <div className="faq-item">
+                                <div className="faq-question">
+                                    How many years of experience do you have?
+                                    <div className="toggle-icon"></div>
+                                </div>
+                                <div className="faq-answer">
+                                    We have extensive industry experience.
+                                </div>
                             </div>
-                            <div className="faq-answer">
-                                Every project is handled with full dedication.
-                            </div>
-                        </div>
 
-                        <div className="faq-item">
-                            <div className="faq-question">
-                                What is your process like?
-                                <div className="toggle-icon"></div>
+                            <div className="faq-item">
+                                <div className="faq-question">
+                                    Do you treat every project with importance?
+                                    <div className="toggle-icon"></div>
+                                </div>
+                                <div className="faq-answer">
+                                    Every project is handled with full dedication.
+                                </div>
                             </div>
-                            <div className="faq-answer">
-                                Simple, fast, and transparent.
+
+                            <div className="faq-item">
+                                <div className="faq-question">
+                                    What is your process like?
+                                    <div className="toggle-icon"></div>
+                                </div>
+                                <div className="faq-answer">
+                                    Simple, fast, and transparent.
+                                </div>
                             </div>
                         </div>
                     </div>
