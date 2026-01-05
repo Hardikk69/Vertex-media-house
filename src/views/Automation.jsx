@@ -16,44 +16,30 @@ import sample1 from '../assets/sample1.png';
 import sample2 from '../assets/sample2.png';
 import sample3 from '../assets/sample3.png';
 
-function PitchDeck() {
+function Automation() {
     useEffect(() => {
         const cleanup = initInteractions();
         return cleanup;
     }, []);
-    const reviewSlides = [
-        {
-            type: 'review',
-            content: '"I had a <strong>great experience</strong> working with Vertex. He was <strong>professional, responsive, and very patient</strong> throughout the process, even as the scope evolved. He took my feedback seriously... What stood out most was his willingness to collaborate."'
-        },
-        {
-            type: 'review',
-            content: '"[Vertex] was super easy to work with and delivered <strong>exactly what I needed</strong>—a clean, professional pitch deck that matched my vision and branding. <strong>Communication was smooth</strong>... I highly recommend if you\'re looking for someone who can bring clarity and polish to your ideas."'
-        },
-        {
-            type: 'review',
-            content: '"[Vertex] <strong>immediately grasped what we are trying to achieve as a company</strong> and delivered the slide decks for both end users and investors. Very professional and responsive. Looking forward to collaborate on other projects."'
-        }
-    ];
 
     const portfolioSlides = [
         {
             type: 'portfolio',
             image: sample1,
-            title: 'Business Proposal',
-            category: 'Corporate Finance'
+            title: 'CRM Integration',
+            category: 'Sales Automation'
         },
         {
             type: 'portfolio',
             image: sample2,
-            title: 'Investor Pitch Deck',
-            category: 'Real Estate'
+            title: 'Email Sequences',
+            category: 'Marketing'
         },
         {
             type: 'portfolio',
             image: sample3,
-            title: 'Sales Strategy',
-            category: 'Marketing'
+            title: 'Chatbot Setup',
+            category: 'Customer Support'
         }
     ];
 
@@ -67,18 +53,18 @@ function PitchDeck() {
                     <div className="hero-grid">
                         <div className="hero-text-content">
                             <h1>
-                                <span className="underline-style">Creative Solutions.</span><br />
-                                <span className="underline-style">Smart Automation.</span>
+                                <span className="underline-style">Streamline Work.</span><br />
+                                <span className="underline-style">Automate Success.</span>
                             </h1>
-                            <p>Helping brands and creators reach their highest point through design, editing, and technology.</p>
+                            <p>Eliminate repetitive tasks and scale your business with intelligent automation solutions custom-built for your needs.</p>
 
                             <div className="hero-side-list">
                                 <div className="list-item active">
                                     <div className="bar"></div>
-                                    <span>Pitch Deck Design</span>
+                                    <span>Workflow Automation</span>
                                 </div>
                                 <div className="list-item">
-                                    <span>Video Editing for creators</span>
+                                    <span>AI Integration</span>
                                 </div>
                             </div>
 
@@ -96,69 +82,68 @@ function PitchDeck() {
             <section className="reviews" id="reviews">
                 <div className="container">
                     <h2>Our Reviews</h2>
-                    <h1>Trusted by Our Clients</h1>
+                    <h1>Automation Success Stories</h1>
 
                     <div className="reviews-grid">
                         <div className="review-card">
                             <div className="stars">★★★★★</div>
                             <p>
-                                I had a great experience working with Vertex. He was
-                                <strong> professional, responsive, and very patient</strong>.
-                                What stood out was his willingness to collaborate.
+                                The automation systems implemented by Vertex have <strong>saved us countless hours</strong>.
+                                We can now focus on strategy rather than busy work.
                             </p>
                             <div className="author">
-                                <strong>Monica Zarafu</strong>
-                                <span>CEO & Founder @ BYKKO</span>
+                                <strong>Sarah Jenkins</strong>
+                                <span>COO @ TechFlow</span>
                             </div>
                         </div>
 
                         <div className="review-card">
                             <div className="stars">★★★★★</div>
                             <p>
-                                Vertex delivered <strong>exactly what I needed</strong> — a clean,
-                                professional pitch deck. Communication was smooth.
+                                Vertex <strong>transformed our operations</strong>. The CRM integration works flawlessly,
+                                and our sales team is more efficient than ever.
                             </p>
                             <div className="author">
-                                <strong>Monica Zarafu</strong>
-                                <span>CEO & Founder @ BYKKO</span>
+                                <strong>Mark Thompson</strong>
+                                <span>Founder @ ScaleUp</span>
                             </div>
                         </div>
 
                         <div className="review-card">
                             <div className="stars">★★★★★</div>
                             <p>
-                                Vertex <strong>immediately understood our vision</strong> and delivered
-                                decks for investors and end users.
+                                <strong>Highly recommended!</strong> The automated email sequences have increased our
+                                engagement significantly. Professional and effective service.
                             </p>
                             <div className="author">
-                                <strong>Monica Zarafu</strong>
-                                <span>CEO & Founder @ BYKKO</span>
+                                <strong>Elena Rodriguez</strong>
+                                <span>Marketing Director @ CreativeCo</span>
                             </div>
                         </div>
 
                         <div className="review-card mini-review">
-                            <p><strong>Very professional</strong>, love working with him!</p>
+                            <p><strong>Huge time saver</strong>, and very easy to work with!</p>
                             <div className="author">
-                                <strong>Monica Zarafu</strong>
-                                <span>CEO & Founder @ BYKKO</span>
+                                <strong>David Chen</strong>
+                                <span>CTO @ NextGen</span>
                             </div>
                         </div>
 
                         <div className="review-card mini-review">
                             <p>
-                                A <strong>quick and accurate delivery</strong> beyond expectations.
+                                <strong>Seamless integration</strong> of our tools.
                             </p>
                             <div className="author">
-                                <strong>Monica Zarafu</strong>
-                                <span>CEO & Founder @ BYKKO</span>
+                                <strong>Alex Wright</strong>
+                                <span>Product Manager</span>
                             </div>
                         </div>
 
                         <div className="review-card mini-review">
-                            <p><strong>Very professional</strong>, love working with him!</p>
+                            <p><strong>Best investment</strong> we made this year.</p>
                             <div className="author">
-                                <strong>Monica Zarafu</strong>
-                                <span>CEO & Founder @ BYKKO</span>
+                                <strong>Lisa Wong</strong>
+                                <span>CEO @ GrowthLabs</span>
                             </div>
                         </div>
                     </div>
@@ -169,7 +154,7 @@ function PitchDeck() {
             {/* Portfolio Slider */}
             <PortfolioSlider
                 title="Our Work"
-                subtitle="Our Portfolio"
+                subtitle="Automation Projects"
                 slides={portfolioSlides}
             />
 
@@ -181,23 +166,23 @@ function PitchDeck() {
                         <div className="process-line"></div>
                         <div className="step">
                             <div className="step-number">01</div>
-                            <h4>Subscribe & get started</h4>
-                            <p>Submit as many requests as you want for a fixed monthly fee.</p>
+                            <h4>Audit & Strategy</h4>
+                            <p>We analyze your current workflows to identify bottlenecks and opportunities.</p>
                         </div>
                         <div className="step">
                             <div className="step-number">02</div>
-                            <h4>Receive your designs</h4>
-                            <p>Get your designs within a few days on average.</p>
+                            <h4>Design Solution</h4>
+                            <p>We map out a custom automation architecture tailored to your goals.</p>
                         </div>
                         <div className="step">
                             <div className="step-number">03</div>
-                            <h4>Revise until perfect</h4>
-                            <p>We'll revise the designs until you're 100% satisfied.</p>
+                            <h4>Implementation</h4>
+                            <p>We build, integrate, and test the automation systems thoroughly.</p>
                         </div>
                         <div className="step">
                             <div className="step-number">04</div>
-                            <h4>Scale your business</h4>
-                            <p>Use your new assets to grow your business.</p>
+                            <h4>Optimize & Scale</h4>
+                            <p>We monitor performance and refine the system for maximum efficiency.</p>
                         </div>
                     </div>
                 </div>
@@ -217,31 +202,31 @@ function PitchDeck() {
                         <div className="faq-items-column">
                             <div className="faq-item">
                                 <div className="faq-question">
-                                    How many years of experience do you have?
+                                    What tools do you automate?
                                     <div className="toggle-icon"></div>
                                 </div>
                                 <div className="faq-answer">
-                                    We have extensive industry experience.
+                                    We work with major platforms like Zapier, Make (Integromat), Slack, HubSpot, Salesforce, and custom APIs.
                                 </div>
                             </div>
 
                             <div className="faq-item">
                                 <div className="faq-question">
-                                    Do you treat every project with importance?
+                                    Is it secure?
                                     <div className="toggle-icon"></div>
                                 </div>
                                 <div className="faq-answer">
-                                    Every project is handled with full dedication.
+                                    Yes, we follow best security practices and ensure data integrity across all integrations.
                                 </div>
                             </div>
 
                             <div className="faq-item">
                                 <div className="faq-question">
-                                    What is your process like?
+                                    How long does setup take?
                                     <div className="toggle-icon"></div>
                                 </div>
                                 <div className="faq-answer">
-                                    Simple, fast, and transparent.
+                                    Timeline varies by complexity, but most initial setups are completed within 2 weeks.
                                 </div>
                             </div>
                         </div>
@@ -254,4 +239,4 @@ function PitchDeck() {
     );
 }
 
-export default PitchDeck;
+export default Automation;

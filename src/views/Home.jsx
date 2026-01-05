@@ -1,4 +1,7 @@
 import { useEffect } from 'react';
+import sample1 from '../assets/sample1.png';
+import sample2 from '../assets/sample2.png';
+import sample3 from '../assets/sample3.png';
 import Navbar from '../components/Navbar'
 import FloatingLines from '../components/FloatingLines';
 import '../styles/Global.css'
@@ -205,9 +208,9 @@ function Home() {
                     </div>
                     <div className="work-grid">
                         {/* <!-- Placeholders for work samples --> */}
-                        <div className="work-item"><img src="/src/assets/sample1.png" alt="Work Sample 1" /></div>
-                        <div className="work-item"><img src="/src/assets/sample2.png" alt="Work Sample 2" /></div>
-                        <div className="work-item"><img src="/src/assets/sample3.png" alt="Work Sample 3" /></div>
+                        <div className="work-item"><img src={sample1} alt="Work Sample 1" /></div>
+                        <div className="work-item"><img src={sample2} alt="Work Sample 2" /></div>
+                        <div className="work-item"><img src={sample3} alt="Work Sample 3" /></div>
                     </div>
                 </div>
             </section>

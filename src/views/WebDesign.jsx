@@ -1,4 +1,7 @@
 import { useEffect } from "react";
+import sample1 from '../assets/sample1.png';
+import sample2 from '../assets/sample2.png';
+import sample3 from '../assets/sample3.png';
 import Navbar from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import { PortfolioSlider } from "../components/PortfolioSlider";
@@ -43,19 +46,19 @@ function WebDesign() {
     const portfolioSlides = [
         {
             type: "portfolio",
-            image: "/src/assets/sample1.png",
+            image: sample1,
             title: "Business Proposal",
             category: "Corporate Finance",
         },
         {
             type: "portfolio",
-            image: "/src/assets/sample2.png",
+            image: sample2,
             title: "Investor Pitch Deck",
             category: "Real Estate",
         },
         {
             type: "portfolio",
-            image: "/src/assets/sample3.png",
+            image: sample3,
             title: "Sales Strategy",
             category: "Marketing",
         },
@@ -71,15 +74,11 @@ function WebDesign() {
                     <div className="hero-grid">
                         <div className="hero-text-content">
                             <h1>
-                                <span className="underline-style"></span>
-                                <br />
-                                Website Design &
-                                <span className="underline-style">Development</span>
+                                <span className="underline-style">Web designing &</span><br />
+                                <span className="underline-style">Development.</span>
                             </h1>
-                            <p>
-                                Helping brands and creators reach their highest point through
-                                design, editing, and technology.
-                            </p>
+                            <p>Helping brands and creators reach their highest point through design, editing, and technology.</p>
+
 
                             <div className="hero-side-list">
                                 <div className="list-item active">
@@ -91,9 +90,7 @@ function WebDesign() {
                                 </div>
                             </div>
 
-                            <button className="btn btn-white hero-cta">
-                                Book a Discovery Call
-                            </button>
+                            <button className="btn btn-white hero-cta">Book a Discovery Call</button>
                         </div>
 
                         <div className="hero-visual">

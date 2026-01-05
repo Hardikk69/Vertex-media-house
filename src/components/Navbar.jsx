@@ -10,6 +10,7 @@ function Navbar() {
           <div className="nav-links">
             <Link to="/web-design">WebDesign</Link>
             <Link to="/pitch-deck">PitchDeck</Link>
+            <Link to="/automation">Automation</Link>
           </div>
 
           {/* Mobile Menu Button */}

@@ -6,14 +6,12 @@
 .scroll-stack-container,
 .scroll-stack-inner,
 .scroll-stack-card {
-    /* Reset common conflicts */
     color: #ffffff;
     text-align: left;
     text-transform: none;
     letter-spacing: normal;
     line-height: 1.5;
     font-family: 'Inter', sans-serif;
-    /* Explicit font to avoid inheritance issues */
     box-sizing: border-box;
     margin-bottom: 24px;
 }
@@ -37,18 +35,14 @@
     width: 100%;
     max-width: 600px;
     margin: 50px auto;
-
     background: #0d1238;
     border-radius: 40px;
     padding: 48px;
-
     border: 1px solid rgba(255,255,255,0.12);
-
     transform-origin: top center;
     will-change: transform, filter;
     backface-visibility: hidden;
     transform-style: preserve-3d;
-
     /* IMPORTANT: no CSS transitions */
     transition: none !important;
 }
