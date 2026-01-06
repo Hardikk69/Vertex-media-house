@@ -122,3 +122,40 @@
     opacity: 0;
     pointer-events: none;
 }
+
+/* Responsive Services */
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+        height: auto;
+        /* Allow auto height on mobile */
+    }
+
+    .service-card {
+        width: 100%;
+        min-height: 80px;
+        /* Small height for inactive items */
+        flex: 0 0 auto;
+        /* Don't grow/shrink based on remaining space like deskop */
+    }
+
+    .service-card.active {
+        flex: 0 0 auto;
+        min-height: 300px;
+        /* Enough space for content */
+    }
+
+    .vertical-label {
+        transform: translate(-50%, -50%) rotate(0deg);
+        /* Horizontal text on mobile */
+        left: 20px;
+        /* Align left */
+        top: 50%;
+        transform: translateY(-50%);
+        right: auto;
+        font-size: 1.2rem;
+        width: 100%;
+        padding-left: 10px;
+        text-align: left;
+    }
+}

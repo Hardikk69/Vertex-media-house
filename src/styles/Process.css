@@ -67,5 +67,16 @@
 @media (max-width: 768px) {
     .process-steps {
         grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .process-line {
+        display: none;
+    }
+
+    .step::before {
+        position: static;
+        margin: 0 auto 16px auto;
+        transform: none;
     }
 }

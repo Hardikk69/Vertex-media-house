@@ -60,3 +60,21 @@ footer.main-footer {
     bottom: 20px;
     left: 0;
 }
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-card {
+        height: auto;
+        min-height: 400px;
+        padding: 24px;
+    }
+
+    .footer-brand {
+        font-size: 3rem;
+        bottom: 10px;
+    }
+
+    .email-capture {
+        width: 100%;
+    }
+}
